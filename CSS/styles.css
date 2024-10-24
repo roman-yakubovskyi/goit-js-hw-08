@@ -1,11 +1,5 @@
 body {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fafafa;
-  color: #212121;
-  margin: 16px;
+  padding: 50px;
 }
 
 .gallery {
@@ -42,9 +36,5 @@ body {
 }
 
 .gallery-image:hover {
-  transform: scale(1.03);
-}
-
-.gallery-link:hover {
-  cursor: pointer;
+  transform: scale(1.06);
 }
