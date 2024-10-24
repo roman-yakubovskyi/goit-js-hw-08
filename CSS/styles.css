@@ -17,25 +17,30 @@ body {
   background-color: #fafafa;
   color: #212121;
   margin: 16px;
-  overflow: hidden;
 }
 
 .gallery {
   max-width: 1128px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  list-style: none;
+  padding: 0;
 }
 
 .gallery-item {
-  display: flex;
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
+  position: relative;
 }
 
 .gallery-link {
   display: block;
+}
+
+.gallery-link-modal {
+  width: 1112px;
+  height: 640px;
 }
 
 .gallery-image {
@@ -47,10 +52,10 @@ body {
   box-sizing: border-box;
 }
 
-.gallery-link:hover {
-  cursor: pointer;
-}
-
 .gallery-image:hover {
   transform: scale(1.03);
+}
+
+.gallery-link:hover {
+  cursor: pointer;
 }
